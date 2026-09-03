@@ -19,7 +19,7 @@ if st.button("Generate Risk Prediction"):
         try:
             # Send inputs to backend prediction endpoint
             payload = {"county": selected_county, "sector": sector}
-            response = requests.post(f"{BACKEND_URL}/predictions/", json=payload)
+            response = requests.post(f"{BACKEND_API_URL}/predictions", json=payload, headers=HEADERS)
             
             if response.status_code == 200:
                 data = response.json()
