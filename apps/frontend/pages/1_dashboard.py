@@ -2,8 +2,7 @@ import streamlit as st
 import requests
 
 # Set backend URL (Local URL for testing, replace with live Render URL later)
-BACKEND_URL = "http://127.0.0.1:8000"
-
+BACKEND_URL = https://agrishield-dnao.onrender.com/
 st.title("🌾 AgriShield: Agricultural Risk Intelligence")
 
 # 1. Input Controls for Users
